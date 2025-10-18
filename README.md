@@ -56,7 +56,3 @@ It handles both **basic arithmetic** and **extended operations** like power, squ
 
 ---
 
-## 📂 How to Run
-1. Clone this repository  
-   ```bash
-   git clone https://github.com/balakrishnan02003/calculator.git
