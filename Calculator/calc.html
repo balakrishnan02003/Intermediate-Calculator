@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+    <div class="calc_body">
+        <input type="text" value="0" readonly>
+            <div class="buttons">
+            <button class="mc grey_color" onclick="memory_clicked(this)">mc</button>
+            <button class="mr grey_color" onclick="memory_clicked(this)">mr</button>
+            <button class="m_minus grey_color" onclick = "memory_clicked(this)">m-</button>
+            <button class="m_plus grey_color" onclick="memory_clicked(this)">m+</button>
+            <button class="ac grey_color" onclick = 'ac_clicked(this)'>AC</button>
+            <button class="square_root grey_color" onclick="sq_clicked()">√x</button>
+            <button class="percent grey_color" onclick = 'percent_clicked()'>%</button>
+            <button class="divide operators" onclick="operator_clicked(this)">÷</button>
+            <button class="nums" onclick = 'num_clicked(this)'>7</button>
+            <button class="nums" onclick = 'num_clicked(this)'>8</button>
+            <button class="nums" onclick = 'num_clicked(this)'>9</button>
+            <button class="multi operators" onclick="operator_clicked(this)">x</button>
+            <button class="nums" onclick = 'num_clicked(this)'>4</button>
+            <button class="nums" onclick = 'num_clicked(this)'>5</button>
+            <button class="nums" onclick = 'num_clicked(this)'>6</button>
+            <button class="minus operators" onclick="operator_clicked(this)">-</button>
+            <button class="nums" onclick = 'num_clicked(this)'>1</button>
+            <button class="nums" onclick = 'num_clicked(this)'>2</button>
+            <button class="nums" onclick = 'num_clicked(this)'>3</button>
+            <button class="plus operators" onclick="operator_clicked(this)">+</button>
+            <button class="nums" onclick = 'num_clicked(this)'>0</button>
+            <button class="decimal" onclick = 'num_clicked(this)' >.</button>
+            <button class="pos_neg" onclick = 'negate_clicked()'>+/-</button>
+            <button class="equal_to operators" onclick="result()">=</button>
+            <button class="pi grey_color" onclick = 'num_clicked(this)'>π</button>
+            <button class="raise_to grey_color" onclick="operator_clicked(this)"> X<sup>y</sup> </button>
+            <button class="r2 grey_color" onclick = "round_off(this)">R2</button>
+            <button class="r0 grey_color" onclick="round_off(this)">R0</button>
+        </div>
+    </div>
+
+</body>
+<script src="calc.js"></script>
+</html>
